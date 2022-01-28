@@ -7,4 +7,5 @@
   <%= link_to "Back to posts", posts_path %>
 
   <%= button_to "Delete this post", @post, method: :delete %>
+  <%= render "posts/comments", post: @post %>
 </div>
