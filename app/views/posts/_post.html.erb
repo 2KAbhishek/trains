@@ -1,7 +1,7 @@
 <div id="<%= dom_id post %>">
   <p>
     <strong>Title:</strong>
-    <%= post.title %>
+    <%= post.title %>, <small><%= time_tag post.created_at, "data-local": "time-ago" %></small>
   </p>
 
   <p>
