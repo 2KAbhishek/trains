@@ -9,9 +9,15 @@ module Types
 
     # TODO: remove me
     field :test_field, String, null: false,
-      description: "An example field added by the generator"
+                               description: 'An example field added by the generator'
     def test_field
-      "Hello World!"
+      'Hello World!'
+    end
+
+    field :posts, [Types::PostType], null: false,
+                                     description: 'All posts'
+    def posts
+      Post.all
     end
   end
 end
