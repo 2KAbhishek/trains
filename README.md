@@ -23,7 +23,7 @@
 <a href="https://github.com/2KAbhishek?tab=followers">
 <img alt="Followers" src="https://img.shields.io/github/followers/2kabhishek?color=222&style=plastic&label=Followers"> </a>
 
-<h3>Short sweet headline with 🎇🎉</h3>
+<h3>Simple blog built with Rails 🚂🖊️</h3>
 
 <figure>
   <img src= "images/screenshot.png" alt="trains Demo" style="width:100%">
@@ -35,70 +35,73 @@
 
 ## What is this
 
-trains is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
+trains is a demo blog built with Rails that follows best practices and is easy to enhance.
+
+Some of the features of trains:
+
+- Internationalization
+- GraphQL API
+- ActionText Support
 
 ## Inspiration
 
-trains was inspired by `<reason/idea>`.
+Needed a rails application to test my ideas on.
 
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
-- You have installed the latest version of `<coding_language/dependency/requirement_1>`
+- You have installed the latest version of `ruby`.
 
 ## Getting trains
 
-To install trains, follow these steps:
+To get trains, follow these steps:
 
 ```bash
 git clone https://github.com/2kabhishek/trains
 cd trains
-<install_command>
+bundle install
+rails server
 ```
 
 ## Using trains
 
-```bash
-USAGE:
-    command [FLAGS] [OPTIONS]
+Using I18n:
 
-FLAGS:
-    -h, --help              Prints help information.
+Currently, trains supports only English and Spanish.
 
-OPTIONS:
-    -o, --option <value>    Option description.
-    Options are: a, b. [default: a]
+Visit `http://localhost:3000/es` to see the blog in Spanish.
 
-Example:
+Trains also supports GraphQL.
 
+To use GraphQL, visit `http://localhost:3000/graphql` and enter the following query:
 
+```js
+    query {
+      posts {
+        id
+        title
+        content
+      }
+    }
 ```
 
 ## How it was built
 
-trains was built using `<tech/library>`
+trains was built using `rails`
 
 ## Challenges faced
 
-While building trains the main challenges were `<issue/difficulty>`
+Setting up action text with Rails 7 was a bit tricky.
 
 ## What I learned
 
-While building trains I `<learned/accomplished>` about `<learning/accomplishment>`
+- Explored more rails concepts
+- Using I18n for model translations with the `after_find` callback
 
 ## What's next
 
-Planning to add `<feature/module>`.
-
-### To-Do
-
-- [x] Setup repo
-- [ ] Think real hard
-- [ ] Start typing
-- [ ] Change me
-- [ ] Update README
-- [ ] Finish it
+Will try out more ideas when needed.
 
 Hit the ⭐ button if you found this useful.
 
