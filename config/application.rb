@@ -1,6 +1,6 @@
-require_relative "boot"
+require_relative 'boot'
 
-require "rails/all"
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -18,5 +18,11 @@ module Trains
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    # Internationalization
+    config.i18n.available_locales = %i[en es]
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
+    config.action_mailer.preview_path = Rails.root.join('spec', 'mailers', 'previews')
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
   end
 end
