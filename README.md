@@ -26,7 +26,7 @@
 <h3>Simple blog built with Rails 🚂🖊️</h3>
 
 <figure>
-  <img src= "images/screenshot.png" alt="trains Demo" style="width:100%">
+  <img src= "images/screenshot.png" alt="trains Demo">
   <br/>
   <figcaption>trains screenshot</figcaption>
 </figure>
