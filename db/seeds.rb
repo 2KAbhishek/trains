@@ -2,12 +2,9 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
-#
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 Post.destroy_all
 
 Post.create(title: "Hello World", content: "This is my first post!")
 Post.create(title: "Hello World 2", content: "This is my second post!")
-
-Comment.create(content: "This is my first comment!", post_id: 1)
