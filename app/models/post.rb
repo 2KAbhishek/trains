@@ -6,8 +6,8 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
 
   private
+
   def translate
-    self.title = I18n.t("posts.title")
-    Rails.logger.info "\n>>> Translating post #{title} <<<\n"
+    self.title = I18n.t("posts.title") + ": " + self.title
   end
 end
