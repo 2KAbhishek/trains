@@ -1,0 +1,6 @@
+es:
+  index:
+    posts:
+      title: "Correo"
+      new: "Nueva Correo"
+      show: "Mostrar Correo"
