@@ -35,3 +35,6 @@ en:
       title: "Posts"
       new: "New Post"
       show: "Show Post"
+      edit: "Edit Post"
+      back: "Back to Posts"
+      delete: "Delete Post"
