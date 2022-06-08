@@ -1,9 +1,8 @@
 es:
-  index:
-    posts:
-      title: "Correo"
-      new: "Nueva Correo"
-      show: "Mostrar Correo"
-      edit: "Editar Correo"
-      back: "Volver a Correos"
-      delete: "Eliminar Correo"
+  posts:
+    title: "Correo"
+    new: "Nueva Correo"
+    show: "Mostrar Correo"
+    edit: "Editar Correo"
+    back: "Volver a Correos"
+    delete: "Eliminar Correo"
