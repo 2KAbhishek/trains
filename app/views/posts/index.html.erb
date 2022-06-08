@@ -1,14 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1><%= t("index.posts.title") %></h1>
+<h1><%= t("posts.title") %></h1>
 
 <div id="posts">
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to t("index.posts.show"), post %>
+      <%= link_to t("posts.show"), post %>
     </p>
   <% end %>
 </div>
 
-<%= link_to t("index.posts.new"), new_post_path %>
+<%= link_to t("posts.new"), new_post_path %>
